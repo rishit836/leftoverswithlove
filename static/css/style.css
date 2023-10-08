@@ -1,0 +1,135 @@
+body{
+    background-color: #A5D8D7;
+}
+.heading{
+    font-family: 'Titillium Web', sans-serif;
+}
+.sub-heading{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* vh stands for viewport height */
+    border-radius: 7px;;
+    border: none;
+    
+}
+form {
+    width: 25%; /* adjust this value to control the form's width */
+    background-color: #324B4B;
+    padding: 50px 15px;;
+    border-radius: 7px;;
+    border: none;
+    font-family: 'Inter', sans-serif;
+  }
+.label{
+    font-family: 'Inter', sans-serif;
+    color: white;;
+    margin-top: 15px;
+}
+.input-form{
+    border-radius: 7px;
+    margin-top: 10px;;
+    border:none;
+    width: 150px;
+    transition: all .3s;
+    background-color: #C0C5E5;
+}
+.input-form:focus{
+    width: 180px;
+}
+.input-form:hover{
+    width: 180px;
+}
+.submit{
+    margin-top: 10px;
+    border: none;
+    border-radius:4px;
+    padding: 5px 15px;
+    transition: all .4s;
+    background-color: #C0C5E5;
+
+}
+.submit:hover{
+    padding: 5px 20px;
+}
+.para{
+    margin-top: 15px;
+}
+.dropdown{
+    margin-top: 30px;
+}
+.msg{
+    font-family: 'Raleway', sans-serif;
+}
+
+.text{
+    background: rgba(220,220,220,.5);
+    width: 25%
+}
+#margining{
+    margin-top: 70px;
+}
+.thanks {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;;
+    width: 50%;
+    height: 50%;
+    /* background-color: red; */
+    margin-top: 5%;    
+    /* position: absolute; */
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    /* margin: auto; */
+
+}
+.navbar{
+    background-color: #95B1B0;
+    margin-bottom: 50px;;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;;
+    transition: all .3s;
+    font-family: 'Inter', sans-serif;
+    margin-right: 250px;;
+    width: 100%;
+
+}
+.navbar a:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;;
+}
+.logo{
+    padding-top: 12px;
+    padding-right: 350px;
+}
+.hompage_bod{
+    font-family: 'Inter', sans-serif;
+    font-size: 45px;
+}
+.username{
+    font-family: 'Inter', sans-serif;
+    font-size: 45px;
+    color:#8785B3;
+    display: inline;
+}
+.home_text{
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    color:#324B4B;
+    margin-top: 20px;
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
