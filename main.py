@@ -1,17 +1,24 @@
 from flask import Flask, render_template, request, redirect
+import requests
 
 app = Flask(__name__)
 
-global username
+global username, fed
 username = ""
+fed = 0
 
 
 @app.route('/')
 def homepage():
-    global username
+    global username, fed
     if username == "":
         username = "Rishit"
-    return render_template('index.html', user=username)
+        fed = 2000
+    if username.lower() != "rishit":
+        fed = 0
+    if username.lower() == "rishit":
+        fed = 2000
+    return render_template('index.html', user=username, fed=fed)
 
 
 @app.route('/connect', methods=['POST', 'GET'])
@@ -63,6 +70,32 @@ def join():
 @app.route('/work')
 def work():
     return render_template("work.html")
+
+
+@app.route('/contact', methods=['POST', 'GET'])
+def contact():
+    msg = False
+    if request.method == "POST":
+        msg = True
+        url = "https://discord.com/api/webhooks/1160539846738186240/QMlwfKJodJmBfmVYtlkOAn07iO1eRT5JHlw9xFHLYrsR7gE2tX2Mq46ooB-yh4pqUHCZ"
+        data = {
+            "username": request.form['username']
+        }
+        data["embeds"] = [
+            {
+                "description": request.form['contact'],
+                "title": request.form['username']
+            }
+        ]
+        result = requests.post(url, json=data)
+
+        try:
+            result.raise_for_status()
+        except requests.exceptions.HTTPError as err:
+            print(err)
+        return render_template('contact.html', msg=msg)
+
+    return render_template('contact.html', msg=msg)
 
 
 if __name__ == '__main__':

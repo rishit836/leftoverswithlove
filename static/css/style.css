@@ -129,6 +129,15 @@ form {
     margin-top: 20px;
     text-align: center;
 }
+.querybox{
+    border-radius: 7px;
+    margin-top: 10px;;
+    border:none;
+    width: 300px;
+    height: 300px;
+    transition: all .3s;
+    background-color: #C0C5E5;
+}
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Titillium+Web:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Titillium+Web:wght@200&display=swap');

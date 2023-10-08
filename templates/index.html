@@ -86,9 +86,16 @@
           <center>
             <div class="hompage_bod">
             Welcome, <p class="username">{{user}}!</p> 
-            <p class="home_text">You have fed over 2000 kids till now. Keep going!!
+            {% if fed <1 %}
+            <p class="home_text">If you haven't fed anyone yet, that's okay! Every small step makes a big difference. Let's start making this world a better place together. 🌟</p>
+            {% else %}
+            <p class="home_text">You have fed over {{fed}} kids till now. Keep going!!
               let’s make this world a better place together</p>
+            {% endif %}
         </div>
+
+
+
 
         </center>
       </main>
