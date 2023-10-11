@@ -99,8 +99,8 @@ form {
     font-size: 25px;;
     transition: all .3s;
     font-family: 'Inter', sans-serif;
-    margin-right: 250px;;
-    width: 100%;
+    margin: auto;
+    width: 250px;
 
 }
 .navbar a:hover{
@@ -110,7 +110,8 @@ form {
 }
 .logo{
     padding-top: 12px;
-    padding-right: 350px;
+    margin-right: auto;
+    width: 250px;
 }
 .hompage_bod{
     font-family: 'Inter', sans-serif;
